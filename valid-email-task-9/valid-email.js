@@ -7,8 +7,8 @@ function isValidEmail(email)
     }
     let mailHeaderFooter = email.split('@')
     let [userName,footer] = mailHeaderFooter
-    let footerLengthCheck = mailHeaderFooter.length!=2
-    if(footerLengthCheck)
+    let mailLengthCheck = mailHeaderFooter.length!=2
+    if(mailLengthCheck)
     {
         return false
     }
