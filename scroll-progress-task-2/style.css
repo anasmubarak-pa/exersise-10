@@ -1,0 +1,41 @@
+.text-area{
+    margin: 25px auto;
+    width: 52%;
+    height: 52%;
+    overflow: scroll;
+    border: 1px dotted black;
+}
+
+:root{
+    --progress:0%;
+}
+
+.progress{
+    z-index: 100;
+}
+
+.progress-bar{
+    margin: auto;
+    position: relative;
+    height: 70px;
+    width: 70%;
+    border: 1px solid green;
+    background: gray;
+    color: white;
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.progress-bar::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: var(--progress);
+    top: 0;
+    left: 0;
+    background: green;
+}
